@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Dashboard</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link href="node_modules/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+    <link href="node_modules/font-awesome/css/font-awesome.css" rel="stylesheet">
+    <link href="Styles.css" rel="stylesheet">
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="node_modules/chart.js/dist/Chart.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm navbar-light" style="background-color:rgba(236, 233, 233, 0.6)">
+        <a class="navbar-brand" href="index.html">
+            <img src="images/canada_flga.jpg" width="30px" alt="Canada Tourism">
+            Canada Tourism
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mynav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mynav">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="dashboard.html">Dashboard</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="destinations.html">Destinations</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="states.html">States</a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link" href="register.html">Register</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="login.html">Login</a>
+                </li>
+            </ul>
+            <form class="form-inline">
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="search"><i class="fa fa-search"></i></span>
+                    </div>
+                    <input type="text" class="form-control" placeholder="Search">
+                </div>
+                <button class="btn btn-warning my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-3 pb-3" style="background-color:#e0dada;">
+                <div class="row">
+                    <div class="col-11 text-white text-center mx-2 pb-2 pt-2 font-weight-bold" style="background-color:#a39e9e; font-family: 'Arial Narrow Bold', sans-serif">PROCUREMENT
+                        MANAGER</div>
+                    <div class="col-12 text-center mt-2">
+                        <img src="images/user.png" width="120px" alt="User">
+                    </div>
+                    <div class="col-12 text-center pt-2 pb-2 font-weight-bold" style="font-family: Verdana, Geneva, Tahoma, sans-serif">John
+                        Smith</div>
+
+                    <div class="col-12 text-center pt-2 pb-2" style="font-family: Arial, Helvetica, sans-serif">KEY
+                        MEASURES</div>
+                    <div class="col-12 mb-3">
+                        <ul class="list-group">
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                Managed Suppliers
+                                <span class="badge badge-secondary" style="font-size:13px">67</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                Managed Spending
+                                <span class="badge badge-secondary" style="font-size:13px">$ 240k</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                New Contacts
+                                <span class="badge badge-secondary" style="font-size:13px">15</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                Value Added
+                                <span class="badge badge-secondary" style="font-size:13px">$ 16k</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-12 text-center pt-2 pb-2" style="font-family: Arial, Helvetica, sans-serif">KEY
+                        ACTIONS</div>
+                    <div class="col-12 mb-3">
+                        <ul class="list-group">
+                            <li class="list-group-item">
+                                Renew partner contracts with discount rate lower than 5%
+                            </li>
+                            <li class="list-group-item">
+                                Register top 5 unlisted suppliers
+                            </li>
+                            <li class="list-group-item">
+                                Reach compliance agreement with Big Company LLC
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <div class="row">
+                    <div class="col-12 pt-0 pb-2" style="background-color:#e9e6e6">
+                        <div class="row mt-2">
+                            <div class="col-6 text-left">
+                                <div class="dropdown">
+                                    <button class="btn btn-secondary dropdown-toggle" type="button" id="myDropDownMenuButton"
+                                        data-toggle="dropdown">
+                                        All Regions
+                                    </button>
+                                    <div class="dropdown-menu">
+                                        <a href="#" class="dropdown-item">East</a>
+                                        <a href="#" class="dropdown-item">West</a>
+                                        <a href="#" class="dropdown-item">North</a>
+                                        <a href="#" class="dropdown-item">South</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 text-right">
+                                <div class="dropdown">
+                                    <button class="btn btn-secondary dropdown-toggle" type="button" id="myDropDownMenuButton2"
+                                        data-toggle="dropdown">
+                                        Years
+                                    </button>
+                                    <div class="dropdown-menu">
+                                        <a href="#" class="dropdown-item">2019</a>
+                                        <a href="#" class="dropdown-item">2018</a>
+                                        <a href="#" class="dropdown-item">2017</a>
+                                        <a href="#" class="dropdown-item">2016</a>
+                                        <a href="#" class="dropdown-item">2015</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-11 mx-auto mt-1 text-white text-center pt-2 pb-2 mx-2 rounded font-weight-bold" style="background-color:#718d97; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 
+                    'Lucida Sans Unicode', Geneva, Verdana, sans-serif">SUPPLIER COMPLIANCE STATS</div>
+                    <div class="col-12">
+                        <div class="row">
+                            <div class="col-lg-4 border-right">
+                                <div class="text-center mb-0"><h4>Suppliers</h4></div>
+                                <div class="mt-0 pb-1">
+                                    <canvas id="suppliersChart" width="100" height="100"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3" style="background-color:#e0dada;">Third</div>
+        </div>
+    </div> 
+
+    <script>
+        var ctx1 = document.getElementById("suppliersChart");
+        var data1 = {
+            datasets: [{
+                data: [ 61, 39 ],
+                backgroundColor: [ "#a0f47f", "#f7838d" ]
+            }],
+            labels: [ "61% Contracted Suppliers", "39% Unlisted Suppliers" ]
+        };
+        var myDoughnutChart1 = new Chart(ctx1, { type: "doughnut", data: data1 });
+    </script> 
+</body>
+
+</html>
+
