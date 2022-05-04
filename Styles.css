@@ -1,0 +1,12 @@
+.populardestinations
+{
+    background-color: #f8f8f8;
+    border: 1px solid #03b903;
+    border-radius: 120px 5px 120px 5px;
+    text-align: center;
+    padding: 5px;
+    font-size: 30px;
+    letter-spacing: 3px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-shadow: 0x 0px 2px 1px skyblue;
+}
