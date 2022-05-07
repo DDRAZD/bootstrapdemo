@@ -71,6 +71,46 @@
             <li class="breadcrumb-item"><a href="index.html">Home</a></li>
             <li class="breadcrumb-item active"><a href="Contact.html">Contact</a></li>
         </ol>
+        <div class="row mb-4">
+            <div class="col-5 mx-auto">
+                <form>
+                    <div class="form-group">
+                        <label for="txtName">Name:</label>
+                        <input type="text" id="txtName" class="form-control" placeholder="Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="txtEmail">Email:</label>
+                        <input type="email" id="txtEmail" class="form-control" placeholder="Email">
+                    </div>
+                    <div class="form-group form-check">
+                        <input type="checkbox" id="chkReceiveNewsLetters" class="form-check-input">
+                        <label for="chkReceiveNewsLetters" class="form-check-label">Receives News Letters</label>
+                    </div>
+                    <div class="form-group">
+                        <label for="drpExpertiseLevel">Expertise Level:</label>
+                        <select id="drpExpertiseLevel" class="form-control">
+                            <option>Beginner</option>
+                            <option>Intermediate</option>
+                            <option>Advanced</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="txtComments">Comments</label>
+                        <textarea id="txtComments" class="form-control" placeholder="Comments"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="txtAttachment">Attachment</label>
+                        <input type="file" id="txtAttachment" class="form-control-file">
+                    </div>
+                    <div class="form-group">
+                        <label for="txtWebsite">Website</label>
+                        <input type="text" id="txtWebsite" class="form-control-plaintext" value="www.github.com">
+                    </div>
+                    <button class="btn btn-success">Submit</button>
+                    <button class="btn btn-danger">Cancel</button>
+                </form>
+            </div>
+        </div>
     </div>
 </body>
 
